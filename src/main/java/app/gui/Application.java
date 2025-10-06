@@ -6,6 +6,7 @@ import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -350,7 +351,7 @@ public class Application {
                     JOptionPane.showMessageDialog(jFrame, "Average Grade: " + avg);
                     courseField.setText("");
                 }
-                catch (JSONException ex) {
+                catch (JSONException | IOException ex) {
                     JOptionPane.showMessageDialog(jFrame, ex.getMessage());
                 }
             }
