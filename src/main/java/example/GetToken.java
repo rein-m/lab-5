@@ -12,6 +12,7 @@ public class GetToken {
      * @param args unused arguments
      */
     public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException{
         GetExample example = new GetExample();
 
         String gradeAPISignUpURL = "https://grade-apis.panchen.ca/signUp";
@@ -19,6 +20,9 @@ public class GetToken {
         String username = "etnlyh";
         String response = example.run(gradeAPISignUpURL, "username", username);
 //        response = example.run(...);
+        String user_name = "juhyjunai";
+        String response = example.run(gradeAPISignUpURL, "Username", user_name);
+        // response = example.run( ...)
         System.out.println(response);
     }
 }
